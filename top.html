@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>头部</title>
+</head>
+<script src="js/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="css/lanrenzhijia.css">
+<style type="text/css">
+    body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        background-image:url('images/header-bg.jpg');
+
+    }
+    .header {
+        background: url('images/header-bg.jpg') no-repeat left;
+        margin: 0 auto;
+        /* max-width: 1440px; */
+        width:97%;
+    }
+    box {
+      -moz-border-radius: 50%; /* Firefox */
+      -webkit-border-radius: 50%; /* Safari �� Chrome */
+      border-radius: 50%; /* Opera 10.5+, �Լ�ʹ����IE-CSS3��IE����� */
+      -moz-box-shadow: 10px 10px 20px #000; /* Firefox */
+      -webkit-box-shadow: 10px 10px 20px #000; /* Safari �� Chrome */
+      box-shadow: 10px 10px 20px #000; /* Opera 10.5+, �Լ�ʹ����IE-CSS3��IE����� */
+      behavior: url("<%=request.getContextPath()%>/zhengjian/ie-css3.htc"); /* ֪ͨIE��������ýű�������'box'�� */
+    }
+    .lanrenzhijia{
+       width:94.3%;
+       margin-top:-66px;
+       margin-right:auto;
+       margin-left:38px;
+       background:#fff;
+       padding:15px;
+       box-shadow:0 0 10px #ccc;
+     }
+     .dd1{
+         width:97%;
+         margin: 0 auto;
+     }
+</style>
+<script>
+	$(function(){
+	    var h = document.body.offsetWidth;
+	    if(h>1900){
+	        $('body').css('background-image', 'url(images/1.png)');
+	    }else if(h>=1500){
+	       $('body').css('background-image', 'url(images/bg12.png)');
+	    }else{
+	       if(h<=1280){
+	          $('body').css('background-image', 'url(images/1.png)');
+	       }else{
+	          $('body').css('background-image', 'url(images/bg8.png)');
+	       }
+	    }
+	});
+</script>
+<body  style="overflow:hidden;text-align: center;">
+     
+    <div class="dd1">
+            <div class="header" id="photoHeader" style="height:121px;text-align: center;">
+
+                </div> 
+                <br><br><br><br>
+                <div class="lanrenzhijia" id="lrDiv" style="text-align: center;margin: 0px auto;margin-top:-66px;">
+                    <div class="title" id="titleId" style="text-align: center;">
+                      <ul class="title-list fr"> 
+                        <li id='djsh' class="on"><span style='color:blue;cursor:pointer'>测试1</span></li>
+                        <li id='dy' ><span style='color:blue;cursor:pointer'>֤测试2</span></li>
+                        <li id='tm' ><span style='color:blue;cursor:pointer'>测试3</span></li>
+                        <li id='mztj'><span style='color:blue;cursor:pointer'>测试4</span></li>
+                        <li id='zzgh'><span style='color:blue;cursor:pointer'>测试5</span></li>        
+                        <li id='zzxx'><span style='color:blue;cursor:pointer'>测试6</span></li>
+                        <li id='zzjy'><span style='color:blue;cursor:pointer'>֤测试7</span></li>    
+                        <li id='jhjl'><span style='color:blue;cursor:pointer'>测试8</span></li>
+                        <li id='yszf'><span style='color:blue;cursor:pointer'>֤测试9</span></li>
+                        <li id='zzsb'><span style='color:blue;cursor:pointer;'>测试10</span></li>
+                        <li id='wdsp'><span style='color:blue;cursor:pointer'><span style="color: white;font-size: 12px;width: 19px; height: 20px;position: absolute; top: -11px;background: #f30808; border-radius: 50%;box-shadow: 0px 0px 5px #404040;z-index:200">测试11 </span></span></li>           
+                        <p><b></b></p>
+                      </ul>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>
